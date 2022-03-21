@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
 require("dotenv").config();
 const Recipe = require("./models/Recipe");
 const User = require("./models/User");
@@ -32,6 +33,7 @@ app.use("/graphiql", graphiqlExpress({ endpointURL: "/graphql" }));
 // Conntect Schemas with GraphQL
 app.use(
   "/graphql",
+  bodyParser.json(),
   graphqlExpress({
     schema,
     context: {

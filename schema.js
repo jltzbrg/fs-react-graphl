@@ -18,4 +18,7 @@ type User {
     favorites: [Recipe]
 }
 
+type Query {
+    getAllRecipes: [Recipe]
+}
 `;
