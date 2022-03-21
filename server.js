@@ -1,6 +1,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
 require("dotenv").config();
+const Recipe = require("./models/Recipe");
+const User = require("./models/User");
 
 //Database:
 mongoose
