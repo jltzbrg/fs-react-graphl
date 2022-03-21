@@ -1,0 +1,22 @@
+{
+  "name": "fullstack-react-graphql",
+  "version": "1.0.0",
+  "description": "Recipes App build with reactjs, express and graphql ",
+  "main": "server.js",
+  "repository": "https://github.com/jltzbrg/fs-react-graphql",
+  "author": "Julio Litzenberg",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
+  },
+  "scripts": {
+    "server": "nodemon server.js",
+    "client": "cd client && yarn start",
+    "dev": "concurrently \"yarn server\" \"yarn client\""
+  }
+}
